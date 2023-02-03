@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: "/v1/context-path"
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1/mongodb
+      database: DB
+      repositories:
+        enabled: true
+  cache:
+    type: redis
+    redis:
+      time-to-live: 300
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 2000
